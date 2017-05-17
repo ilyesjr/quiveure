@@ -94,10 +94,6 @@ textarea {
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
-body
-{
-  margin: 16px 16px 0px 16px;
-}
 
 @font-face {
   font-family: "avenir";
@@ -105,48 +101,23 @@ body
 }
 .backgroundImg
 {
-  background-color: lightblue;
+  background-image: url(../img/home-alone.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+}
+
+.backgroundFilter
+{
+  background-image: -webkit-linear-gradient(120deg,#00f2cd 0%,#21daeb 100%);
 }
 /*<!-- ============================= -->*/
 /*<!-- =============NAV============= -->*/
 /*<!-- ============================= -->*/
 
 /*Navigation List*/
-.navnormal
-{
-  display: flex;
-  justify-content: space-between;
-  padding-top: 1em;
-}
 
-.navnormal ul
-{
-  display: flex;
-  list-style-type: none;
-  margin-top: 1.5em;
-  font-family: "avenir";
-}
-
-.navnormal ul li
-{
-  margin-right: 10px;
-  font-size: 20px;
-}
-
-.navnormal .signli li:nth-child(1)
-{
-  padding-right: 40px;
-  margin-top: 5px;
-}
-.navnormal .signli li:nth-child(2)
-{
-  padding: 5.5px 25px;
-  background-color: #FFF;
-  border: 2px solid #FFF;
-  border-radius: 30px 30px;
-  font-size: 16px;
-  margin-right: 2em;
-}
 /*~~~~~~~~~~~~~~~~~~~~~~*/
 
 /*Navigation Logo*/
@@ -155,23 +126,218 @@ body
   width: 47px;
   height: 42px;
 }
+
+.navnormal .navlogo a svg
+{
+  fill: #FFF;
+}
 /*~~~~~~~~~~~~~~~~~~~~~~*/
 
-/*mathieu*/
+/*<!-- ==================================== -->*/
+/*<!-- =============END OF NAV============= -->*/
+/*<!-- ==================================== -->*/
+/*~~~~~~~~~~~~~~~~~~~~~~*/
+/*~~~~~~~~~~~~~~~~~~~~~~*/
+/*<!-- ============================= -->*/
+/*<!-- =============MAIN============= -->*/
+/*<!-- ============================= -->*/
 
-/*end of mathieu*/
+/*Title, Subtitle and Text*/
+.mainContent
+{
+  display: flex;
+  flex-direction: column;
+}
+
+.mainContent h1
+{
+  font-family: "avenir";
+  font-size: 55px;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-align: center;
+  letter-spacing: -1px;
+  margin: 100px 40px 20px;
+  color: #FFF;
+}
+
+.mainContent .subTitle
+{
+  font-family: "avenir";
+  font-size: 35px;
+  font-weight: lighter;
+  text-align: center;
+  letter-spacing: -1px;
+  color: #FFF;
+  margin: 0px;
+}
+
+.mainContent .subTitle #sendButton
+{
+  padding: 14px 30px 12px 30px;
+  margin: 0 14px;
+  font-family: "avenir";
+  font-size: 12px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  border: 2px solid #fff;
+  border-radius: 2px;
+  vertical-align: middle;
+}
+/*~~~~~~~~~~~~~~~~~~~~~~*/
+
+/*Formulaire*/
+.mainContent .signUpform
+{
+  margin: auto;
+}
+.mainContent .signUpform p
+{
+  font-family: "avenir";
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+  letter-spacing: 1px;
+  color: #FFF;
+  margin-top: 2em;
+}
+
+.mainContent .signUpform #formSignUpp
+{
+  width: 425px;
+  height: 60px;
+  font-family: "avenir";
+  font-size: 18px;
+  border: none;
+  border-radius: 30px;
+  padding-left: 30px;
+  color: #7c8a96;
+}
+
+.mainContent .signUpform .joinButton
+{
+  height: 60px;
+  font-family: "avenir";
+  font-size: 13px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  color: #FFF;
+  padding: 5.5px 50px;
+  background-color: #f79e02;
+  border: 2px solid #f79e02;
+  border-radius: 30px 30px;
+  text-transform: uppercase;
+}
+
+.mainContent .lastPara
+{
+  font-family:"avenir";
+  font-size: 28px;
+  letter-spacing: -1px;
+  color: #FFF;
+  text-align: center;
+  margin-top: 1.5em;
+}
+/*<!-- ==================================== -->*/
+/*<!-- =============END OF MAIN============ -->*/
+/*<!-- ==================================== -->*/
+
+
+/*Mathieu CSS*/
+
+/*End of Mathieu CSS*/
 
 
 
-/*illyes*/
+/*Ilyes CSS*/
 
-/*end of illyes*/
+/*End of Ilyes CSS*/
 
 
-/*sahbia*/
+/*Sahbia*/
 
-/*end of sahbia*/
+/*End of Sahbia CSS*/
 
+
+@media (min-width: 900px)
+{
+  body
+  {
+    margin: 16px 16px 0px 16px;
+  }
+  /*Mathieu CSS*/
+
+  /*End of Mathieu CSS*/
+  /*~~~~~~~~~~~~~~~~~~~~~*/
+  /*Ilyes CSS*/
+  /*Navigation List*/
+  .navnormal
+  {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 2.5em;
+  }
+
+  .navnormal ul
+  {
+    display: flex;
+    list-style-type: none;
+    margin-top: 1.5em;
+    font-family: "avenir";
+  }
+
+  .navnormal ul li
+  {
+    margin-right: 10px;
+    font-size: 20px;
+  }
+
+  .navnormal ul li a
+  {
+    color: #FFF;
+    text-decoration: none;
+  }
+
+  .navnormal .signli li:nth-child(1)
+  {
+    padding-right: 40px;
+    margin-top: 5px;
+  }
+  .navnormal .signli li:nth-child(2)
+  {
+    padding: 5.5px 25px;
+    background-color: #FFF;
+    border: 2px solid #FFF;
+    border-radius: 30px 30px;
+    font-size: 16px;
+    margin-right: 2em;
+  }
+
+  .navnormal .signli li:nth-child(2) a
+  {
+    color: #0ce9d9;
+  }
+  /*~~~~~~~~~~~~~~~~~~~~~~*/
+
+  /*Navigation Logo*/
+  .navnormal .navlogo a
+  {
+    width: 47px;
+    height: 42px;
+  }
+
+  .navnormal .navlogo a svg
+  {
+    fill: #FFF;
+  }
+  /*~~~~~~~~~~~~~~~~~~~~~~*/
+  /*End of Ilyes CSS*/
+  /*~~~~~~~~~~~~~~~~~~~~~*/
+  /*Sahbia CSS*/
+
+  /*End of Sahbia CSS*/
+}
 
 
 

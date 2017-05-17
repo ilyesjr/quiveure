@@ -10,7 +10,6 @@
 
   <link rel="apple-touch-icon" href="apple-touch-icon.png">
   <!-- Place favicon.ico in the root directory -->
-  <link rel="stylesheet" href="css/bootstrap.css">
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/main.css">
   <script src="js/vendor/modernizr-2.8.3.min.js"></script>
@@ -22,51 +21,62 @@
         <![endif]-->
 
   <!-- Add your site or application content here -->
-
-<div class="backgroundImg">
-  <!-- ============================= -->
-  <!-- =============NAV============= -->
-  <!-- ============================= -->
-  <nav class="navnormal">
-    <ul class="mainli">
-      <li><a href="#">Tour</a></li>
-      <li><a href="features.html">Features</a></li>
-      <li><a href="pricing.html">Pricing</a></li>
-    </ul>
-    <figure class="navlogo">
-      <a href="index.html">
-        <svg class="id-shape" width="166" height="44" viewBox="0 0 166 44" aria-labelledby="aria-title">
+  <div class="backgroundFilter">
+    <div class="backgroundImg">
+      <!-- ============================= -->
+      <!-- =============NAV============= -->
+      <!-- ============================= -->
+      <nav class="navnormal">
+        <ul class="mainli">
+          <li><a href="#">Tour</a></li>
+          <li><a href="features.html">Features</a></li>
+          <li><a href="pricing.html">Pricing</a></li>
+        </ul>
+        <figure class="navlogo">
+          <a href="index.html">
+            <svg class="id-shape" width="166" height="44" viewBox="0 0 166 44" aria-labelledby="aria-title">
           <title class="id-title hide" id="aria-title">Quiver</title>
           <path id="id-txt" d="M85.481 6.266c0 2.912-2.293 5.208-5.228 5.208 -2.964 0-5.229-2.296-5.229-5.208C75.024 3.297 77.289 1 80.253 1 83.188 1 85.481 3.297 85.481 6.266zM58.762 43c-7.325 0-13.253-3.893-13.253-12.518V14.799h8.752v14.927c0 3.472 1.901 5.096 4.501 5.096 2.601 0 4.502-1.624 4.502-5.096V14.799h8.723v15.71C71.986 39.107 66.059 43 58.762 43zM75.759 42.272V14.799h8.751v27.472H75.759zM97.034 42.272L86.409 14.799h9.534l6.123 17.923 6.178-17.923h9.255l-10.485 27.472H97.034zM143.837 28.522c0 0.896-0.057 2.128-0.168 2.716h-18.593c0.754 3.025 2.851 4.397 5.872 4.397 2.041 0 4.221-0.84 5.983-2.408l5.648 5.265C139.698 41.376 135.616 43 130.5 43c-8.611 0-14.455-5.741-14.455-14.311 0-8.625 5.703-14.646 14.064-14.646C138.244 14.044 143.837 19.924 143.837 28.522zM125.103 25.693h9.981c-0.698-2.772-2.377-4.201-4.949-4.201C127.424 21.492 125.774 22.977 125.103 25.693zM165 14.463l-0.811 8.737c-1.201-0.42-2.823-0.728-4.39-0.728 -3.132 0-5.004 1.512-5.004 4.957v14.842h-8.752V14.799h8.388v3.165c1.593-2.689 4.109-3.92 7.493-3.92C163.239 14.044 164.33 14.268 165 14.463z"></path>
           <path id="id-q" d="M46.695 43c0 0-20.923 0-25.061 0C9.555 43 1 34.402 1 22.668 1 10.935 9.555 2.337 21.633 2.337c12.079 0 20.635 8.598 20.635 20.331 0 4.379-1.249 8.036-3.441 11.164l-6.73-7.697c0.284-1.104 0.442-2.26 0.442-3.467 0-6.721-4.529-11.37-10.905-11.37 -6.374 0-10.904 4.649-10.904 11.37 0 6.721 4.53 11.37 10.904 11.37 0.082 0 0.161-0.005 0.243-0.007l17.027-0.022L46.695 43z"></path>
         </svg>
-      </a>
-    </figure>
-    <ul class="signli">
-      <li><a href="#">Download</a></li>
-      <li><a href="signin.html">Sign In</a></li>
-    </ul>
-  </nav>
+          </a>
+        </figure>
+        <ul class="signli">
+          <li><a href="#">Download</a></li>
+          <li><a href="signin.html">Sign In</a></li>
+        </ul>
+      </nav>
 
-  <nav class="navnormalMobile">
-  </nav>
-  <!-- ==================================== -->
-  <!-- =============END OF NAV============= -->
-  <!-- ==================================== -->
+      <nav class="navnormalMobile">
+      </nav>
+      <!-- ==================================== -->
+      <!-- =============END OF NAV============= -->
+      <!-- ==================================== -->
 
-  <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
-  <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
-  <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+      <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+      <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+      <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
 
-  <!-- ============================= -->
-  <!-- =============MAIN============= -->
-  <!-- ============================= -->
+      <!-- ============================= -->
+      <!-- =============MAIN============= -->
+      <!-- ============================= -->
+      <section class="mainContent">
+        <h1>THAT FEELING YOU GET WHEN…</h1>
+        <p class="subTitle">you just pressed <span id="sendButton">SEND</span>and wish <br> you could take it back.</p>
+        <form class="signUpform" action="index.html" method="post">
+          <p>Sign up now and get 100GB storage for free!</p>
+          <label for="formSignUpp" class="hidden">E-mail or Phone number</label>
+          <input type="text" id="formSignUpp" name="formSignUpp" value="E-mail or Phone number">
+          <button class="joinButton">Join free</button>
+        </form>
+        <p class="lastPara">We are here to let you share however you <br> want, and take it back when you need.</p>
+      </section>
 
-
-  <!-- ==================================== -->
-  <!-- =============END OF MAIN============= -->
-  <!-- ==================================== -->
-</div>
+      <!-- ==================================== -->
+      <!-- =============END OF MAIN============= -->
+      <!-- ==================================== -->
+    </div>
+  </div>
   <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
   <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
   <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
@@ -85,7 +95,6 @@
   <script>
     window.jQuery || document.write('<script src="js/vendor/jquery-1.12.0.min.js"><\/script>')
   </script>
-  <script src="js/bootstrap.js"></script>
   <script src="js/plugins.js"></script>
   <script src="js/main.js"></script>
 
