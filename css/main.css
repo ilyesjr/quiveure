@@ -244,9 +244,6 @@ textarea {
   color: #FFF;
 }
 
-
-/* When the height of the screen is less than 450 pixels, change the font-size of the links and position the close button again, so they don't overlap */
-
 @media screen and (max-height: 450px) {
   .overlay a {
     font-size: 20px
@@ -346,7 +343,7 @@ textarea {
 }
 
 .mainContent .signUpform #formSignUpp {
-  width: 425px;
+  width: 20em;
   height: 60px;
   font-family: "avenir";
   font-size: 18px;
