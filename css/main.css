@@ -217,6 +217,15 @@ img {
   width: 50px;
 }
 
+.bgnoir {
+  background-color: #282B33;
+  color: #FFFFFF;
+}
+
+.bgrouge {
+  background-image:linear-gradient(#FA3267, #F33F3E);
+  color: #FFFFFF;
+}
 /*end of mathieu*/
 
 
