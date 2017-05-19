@@ -159,6 +159,64 @@ body
 
 /*mathieu*/
 
+/*header*/
+
+header .titrefeatures, header p {
+  text-align: center;
+}
+
+header .titrefeatures {
+  margin-top: 100px;
+}
+
+header p {
+  margin-bottom: 100px;
+}
+
+
+.imganimation {
+  display: flex;
+}
+
+.imganimation li {
+  margin-left: 60px;
+}
+
+.features3 img{
+width: 100%;
+}
+
+
+/*maincontainer*/
+
+h3 {
+  font-size: 30px;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.col.l6 {
+  padding-top:160px;
+  padding-bottom: 160px;
+  padding-left: 100px;
+  padding-right: 100px;
+}
+
+section ul li {
+  font-size: 18px;
+  line-height: 24px;
+  padding-bottom: 20px;
+}
+
+img {
+  height: 200px;
+}
+
+.logof img{
+  height: 50px;
+  width: 50px;
+}
+
 /*end of mathieu*/
 
 
