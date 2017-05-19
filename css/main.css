@@ -301,7 +301,7 @@ textarea {
  {
   background-color: rgb(246,249,249);
   padding-top: 30px;
-
+  border: 1px solid black;
 
  }
 
@@ -345,8 +345,40 @@ textarea {
 {
   color:black;
 }
+           /*============STYLE PRICES ARTICLE==========*/
 
+.chiffres .row .price 
+{
+    border: 1px solid red;
+    padding: 0px;
+    background-color: rgb(218,225,235);
+    margin-bottom: 20px;
+    
+} 
 
+ .price .entete-price 
+ {
+  
+   border-radius: 5px;
+   border:3px solid transparent;
+   width: 100%;
+ } 
+ .price .entete-price .price-titre  
+ {
+   padding-bottom: 20px;
+   color: rgb(67,85,205);
+   font-size: 14px;
+ }  
+ .price .entete-price .price-chifre 
+ {
+   display: flex;
+
+ }
+ .price .entete-price .price-chifre ul 
+ {
+    display :flex;
+    flex-direction: column;
+  }
 
 /*End of Sahbia CSS*/
 
