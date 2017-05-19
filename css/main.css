@@ -428,10 +428,14 @@ width: 100%;
 
 /*maincontainer*/
 
-h3 {
+.fmaincontainer h3 {
   font-size: 30px;
   margin-top: 50px;
   margin-bottom: 50px;
+}
+
+.fmaincontainer h2 {
+  margin: 0;
 }
 
 .col.l6 {
@@ -439,6 +443,10 @@ h3 {
   padding-bottom: 160px;
   padding-left: 70px;
   padding-right: 70px;
+}
+
+.col.l6.bgrouge, .col.l6.bggris  {
+  padding-bottom: 0;
 }
 
 section ul li {
@@ -465,6 +473,11 @@ section ul li {
 .bgrouge {
   background-image:linear-gradient(#FA3267, #F33F3E);
   color: #FFFFFF;
+  padding-bottom: 0;
+}
+
+.bggris {
+  background-color: #F6F9F9;
 }
 
 .titreblanc {
@@ -489,6 +502,17 @@ margin-right: 30px;
 .logotaille2 img {
   width: 120px;
   height: 120px;
+}
+
+.tailletitref {
+  font-size: 50px;
+  text-align: center;
+}
+
+.signup {
+  margin-top: 50px;
+  margin-bottom: 50px;
+  text-align: center;
 }
 
 
