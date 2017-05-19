@@ -47,8 +47,42 @@
         </ul>
       </nav>
 
-      <nav class="navnormalMobile">
+<!-- MOBILE AND TABLETS PART -->
+      <nav id="myNav" class="navnormalMobile overlay">
+        <!-- Button to close the overlay navigation -->
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+        <!-- Overlay Content -->
+        <figure class="navlogoMobile">
+          <a href="index.html">
+            <svg class="id-shape" width="166" height="44" viewBox="0 0 166 44" aria-labelledby="aria-title">
+              <title class="id-title hide" id="aria-title">Quiver</title>
+              <path id="id-q" d="M46.695 43c0 0-20.923 0-25.061 0C9.555 43 1 34.402 1 22.668 1 10.935 9.555 2.337 21.633 2.337c12.079 0 20.635 8.598 20.635 20.331 0 4.379-1.249 8.036-3.441 11.164l-6.73-7.697c0.284-1.104 0.442-2.26 0.442-3.467 0-6.721-4.529-11.37-10.905-11.37 -6.374 0-10.904 4.649-10.904 11.37 0 6.721 4.53 11.37 10.904 11.37 0.082 0 0.161-0.005 0.243-0.007l17.027-0.022L46.695 43z"></path>
+            </svg>
+          </a>
+        </figure>
+        <ul class="navnormalMobile overlay-content">
+          <li class="main-menu"><a href="#">Tour</a></li>
+          <li class="main-menu"><a href="features.html">Features</a></li>
+          <li class="main-menu"><a href="pricing.html">Pricing</a></li>
+          <li class="secondary-menu"><a href="#">Apps</a></li>
+          <li class="secondary-menu"><a href="#">About</a></li>
+          <li class="secondary-menu"><a href="#">Careers</a></li>
+        </ul>
       </nav>
+
+      <div class="burger-wrapper">
+        <a class="mobile-nav-signin" href="signin.html">Sign in</a>
+        <!-- Button to show the overlay navigation -->
+        <button onclick="openNav()" class="btn-burger">
+          <span class="wrap">
+            <span class="l l1"></span>
+            <span class="l l2"></span>
+            <span class="l l3"></span>
+          </span>
+        </button>
+      </div>
+<!-- ~~~~~~~~~~~~~~~~~~~~~~~ -->
       <!-- ==================================== -->
       <!-- =============END OF NAV============= -->
       <!-- ==================================== -->
@@ -65,7 +99,7 @@
         <p class="subTitle">you just pressed <span id="sendButton">SEND</span>and wish <br> you could take it back.</p>
         <form class="signUpform" action="index.html" method="post">
           <p>Sign up now and get 100GB storage for free!</p>
-          <label for="formSignUpp" class="hidden">E-mail or Phone number</label>
+          <label for="formSignUpp" class="hidden"></label>
           <input type="text" id="formSignUpp" name="formSignUpp" placeholder="E-mail or Phone number">
           <button class="joinButton">Join free</button>
         </form>

@@ -1,20 +1,23 @@
 /*! HTML5 Boilerplate v5.3.0 | MIT License | https://html5boilerplate.com/ */
 
+
 /*
  * What follows is the result of much research on cross-browser styling.
  * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
  * Kroc Camen, and the H5BP dev community and team.
  */
 
+
 /* ==========================================================================
    Base styles: opinionated defaults
    ========================================================================== */
 
 html {
-    color: #222;
-    font-size: 1em;
-    line-height: 1.4;
+  color: #222;
+  font-size: 1em;
+  line-height: 1.4;
 }
+
 
 /*
  * Remove text-shadow in selection highlight:
@@ -25,27 +28,29 @@ html {
  */
 
 ::-moz-selection {
-    background: #b3d4fc;
-    text-shadow: none;
+  background: #b3d4fc;
+  text-shadow: none;
 }
 
 ::selection {
-    background: #b3d4fc;
-    text-shadow: none;
+  background: #b3d4fc;
+  text-shadow: none;
 }
+
 
 /*
  * A better looking default horizontal rule
  */
 
 hr {
-    display: block;
-    height: 1px;
-    border: 0;
-    border-top: 1px solid #ccc;
-    margin: 1em 0;
-    padding: 0;
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #ccc;
+  margin: 1em 0;
+  padding: 0;
 }
+
 
 /*
  * Remove the gap between audio, canvas, iframes,
@@ -53,43 +58,42 @@ hr {
  * https://github.com/h5bp/html5-boilerplate/issues/440
  */
 
-audio,
-canvas,
-iframe,
-img,
-svg,
-video {
-    vertical-align: middle;
+audio, canvas, iframe, img, svg, video {
+  vertical-align: middle;
 }
+
 
 /*
  * Remove default fieldset styles.
  */
 
 fieldset {
-    border: 0;
-    margin: 0;
-    padding: 0;
+  border: 0;
+  margin: 0;
+  padding: 0;
 }
+
 
 /*
  * Allow only vertical resizing of textareas.
  */
 
 textarea {
-    resize: vertical;
+  resize: vertical;
 }
+
 
 /* ==========================================================================
    Browser Upgrade Prompt
    ========================================================================== */
 
 .browserupgrade {
-    margin: 0.2em 0;
-    background: #ccc;
-    color: #000;
-    padding: 0.2em 0;
+  margin: 0.2em 0;
+  background: #ccc;
+  color: #000;
+  padding: 0.2em 0;
 }
+
 
 /* ==========================================================================
    Author's custom styles
@@ -99,8 +103,8 @@ textarea {
   font-family: "avenir";
   src: url("../font/avenir.otf");
 }
-.backgroundImg
-{
+
+.backgroundImg {
   background-image: url(../img/home-alone.png);
   background-position: center;
   background-repeat: no-repeat;
@@ -108,49 +112,186 @@ textarea {
   height: 100vh;
 }
 
-.backgroundFilter
-{
-  background-image: -webkit-linear-gradient(120deg,#00f2cd 0%,#21daeb 100%);
+.backgroundFilter {
+  background-image: -webkit-linear-gradient(120deg, #00f2cd 0%, #21daeb 100%);
 }
-/*<!-- ============================= -->*/
-/*<!-- =============NAV============= -->*/
+
+
 /*<!-- ============================= -->*/
 
-/*Navigation List*/
+
+/*<!-- =============NAV MOBILE============= -->*/
+
+
+/*<!-- ============================= -->*/
+
+
+/*Navigation List */
+
+.navnormal {
+  display: none;
+}
+
+
+/*Burger Wrapper */
+
+.burger-wrapper .mobile-nav-signin {
+  position: fixed;
+  top: 27px;
+  right: 20px;
+  z-index: 501;
+  font-family: "avenir";
+  font-size: 17px;
+  font-weight: bold;
+  color: #FFF;
+  letter-spacing: -1px;
+  text-decoration: none;
+}
+
+.burger-wrapper .btn-burger {
+  position: fixed;
+  left: 20px;
+  top: 22px;
+  width: 38px;
+  height: 38px;
+  border: none;
+  background: transparent;
+  outline: none;
+}
+
+.btn-burger span.l {
+  position: absolute;
+  left: 0;
+  top: 18px;
+  display: block;
+  width: 36px;
+  height: 2px;
+  background-color: #fff;
+}
+
+.btn-burger .l1 {
+  margin-top: -7px;
+}
+
+.btn-burger .l3 {
+  margin-top: 7px;
+}
+
 
 /*~~~~~~~~~~~~~~~~~~~~~~*/
 
-/*Navigation Logo*/
-.navnormal .navlogo a
-{
-  width: 47px;
-  height: 42px;
+
+/*Navigation Mobile*/
+
+.navnormalMobile {
+  display: flex;
 }
 
-.navnormal .navlogo a svg
-{
+.navnormalMobile .navlogoMobile {
+  width: 39px;
+  height: 35px;
+  left: 42%;
+  z-index: 501;
+  position: fixed;
+}
+
+.navnormalMobile .navlogoMobile a svg {
   fill: #FFF;
 }
-/*~~~~~~~~~~~~~~~~~~~~~~*/
 
-/*<!-- ==================================== -->*/
-/*<!-- =============END OF NAV============= -->*/
-/*<!-- ==================================== -->*/
-/*~~~~~~~~~~~~~~~~~~~~~~*/
-/*~~~~~~~~~~~~~~~~~~~~~~*/
-/*<!-- ============================= -->*/
-/*<!-- =============MAIN============= -->*/
-/*<!-- ============================= -->*/
 
-/*Title, Subtitle and Text*/
-.mainContent
-{
-  display: flex;
-  flex-direction: column;
+/* The Overlay (background) */
+
+.overlay {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  background-color: rgba(247,158,2,.97);
+  overflow-x: hidden;
 }
 
-.mainContent h1
-{
+
+/* Position the content inside the overlay */
+
+.overlay-content {
+  display: flex;
+  flex-direction: column;
+  list-style-type: none;
+  position: relative;
+  top: 25%;
+  width: 100%;
+  text-align: center;
+  margin-top: 30px;
+}
+
+.overlay a {
+  padding: 8px;
+  text-decoration: none;
+  font-size: 36px;
+  color: #FFF;
+  display: block;
+  transition: 0.3s;
+}
+
+.overlay .closebtn {
+  position: absolute;
+  top: 0px;
+  left: 15px;
+  font-size: 50px;
+  color: #FFF;
+}
+
+
+/* When the height of the screen is less than 450 pixels, change the font-size of the links and position the close button again, so they don't overlap */
+
+@media screen and (max-height: 450px) {
+  .overlay a {
+    font-size: 20px
+  }
+  .overlay .closebtn {
+    font-size: 40px;
+    top: 15px;
+    right: 35px;
+  }
+}
+
+
+/*<!-- ==================================== -->*/
+
+
+/*<!-- =============END OF NAV MOBILE============= -->*/
+
+
+/*<!-- ==================================== -->*/
+
+
+/*~~~~~~~~~~~~~~~~~~~~~~*/
+
+
+/*~~~~~~~~~~~~~~~~~~~~~~*/
+
+
+/*<!-- ============================= -->*/
+
+
+/*<!-- =============MAIN============= -->*/
+
+
+/*<!-- ============================= -->*/
+
+
+/*Title, Subtitle and Text*/
+
+.mainContent {
+  display: flex;
+  flex-direction: column;
+  padding-top: 8em;
+}
+
+.mainContent h1 {
   font-family: "avenir";
   font-size: 55px;
   font-weight: bold;
@@ -161,8 +302,7 @@ textarea {
   color: #FFF;
 }
 
-.mainContent .subTitle
-{
+.mainContent .subTitle {
   font-family: "avenir";
   font-size: 35px;
   font-weight: lighter;
@@ -172,8 +312,7 @@ textarea {
   margin: 0px;
 }
 
-.mainContent .subTitle #sendButton
-{
+.mainContent .subTitle #sendButton {
   padding: 14px 30px 12px 30px;
   margin: 0 14px;
   font-family: "avenir";
@@ -185,15 +324,18 @@ textarea {
   border-radius: 2px;
   vertical-align: middle;
 }
+
+
 /*~~~~~~~~~~~~~~~~~~~~~~*/
 
+
 /*Formulaire*/
-.mainContent .signUpform
-{
+
+.mainContent .signUpform {
   margin: auto;
 }
-.mainContent .signUpform p
-{
+
+.mainContent .signUpform p {
   font-family: "avenir";
   font-size: 20px;
   font-weight: bold;
@@ -203,8 +345,7 @@ textarea {
   margin-top: 2em;
 }
 
-.mainContent .signUpform #formSignUpp
-{
+.mainContent .signUpform #formSignUpp {
   width: 425px;
   height: 60px;
   font-family: "avenir";
@@ -215,8 +356,7 @@ textarea {
   color: #7c8a96;
 }
 
-.mainContent .signUpform .joinButton
-{
+.mainContent .signUpform .joinButton {
   height: 60px;
   font-family: "avenir";
   font-size: 13px;
@@ -230,82 +370,78 @@ textarea {
   text-transform: uppercase;
 }
 
-.mainContent .lastPara
-{
-  font-family:"avenir";
+.mainContent .lastPara {
+  font-family: "avenir";
   font-size: 28px;
   letter-spacing: -1px;
   color: #FFF;
   text-align: center;
   margin-top: 1.5em;
 }
+
+
 /*<!-- ==================================== -->*/
+
+
 /*<!-- =============END OF MAIN============ -->*/
+
+
 /*<!-- ==================================== -->*/
 
 
 /*Mathieu CSS*/
 
+
 /*End of Mathieu CSS*/
 
 
-
 /*Ilyes CSS*/
+
 
 /*End of Ilyes CSS*/
 
 
 /*Sahbia*/
 
+
 /*End of Sahbia CSS*/
 
-
-@media (min-width: 900px)
-{
-  body
-  {
+@media (min-width: 900px) {
+  body {
     margin: 16px 16px 0px 16px;
   }
   /*Mathieu CSS*/
-
   /*End of Mathieu CSS*/
   /*~~~~~~~~~~~~~~~~~~~~~*/
   /*Ilyes CSS*/
   /*Navigation List*/
-  .navnormal
-  {
+  .navnormalMobile, .burger-wrapper {
+    display: none;
+  }
+  .navnormal {
     display: flex;
     justify-content: space-between;
     padding-top: 2.5em;
   }
-
-  .navnormal ul
-  {
+  .navnormal ul {
     display: flex;
     list-style-type: none;
     margin-top: 1.5em;
     font-family: "avenir";
   }
-
-  .navnormal ul li
-  {
+  .navnormal ul li {
     margin-right: 10px;
     font-size: 20px;
   }
-
-  .navnormal ul li a
-  {
+  .navnormal ul li a {
     color: #FFF;
     text-decoration: none;
   }
-
-  .navnormal .signli li:nth-child(1)
-  {
+  .navnormal .signli li:nth-child(1) {
     padding-right: 40px;
     margin-top: 5px;
   }
-  .navnormal .signli li:nth-child(2)
-  {
+  .navnormal .signli li:nth-child(2) {
     padding: 5.5px 25px;
     background-color: #FFF;
     border: 2px solid #FFF;
@@ -313,51 +449,39 @@ textarea {
     font-size: 16px;
     margin-right: 2em;
   }
-
-  .navnormal .signli li:nth-child(2) a
-  {
+  .navnormal .signli li:nth-child(2) a {
     color: #0ce9d9;
   }
   /*~~~~~~~~~~~~~~~~~~~~~~*/
-
   /*Navigation Logo*/
-  .navnormal .navlogo a
-  {
+  .navnormal .navlogo a {
     width: 47px;
     height: 42px;
   }
-
-  .navnormal .navlogo a svg
-  {
+  .navnormal .navlogo a svg {
     fill: #FFF;
   }
   /*~~~~~~~~~~~~~~~~~~~~~~*/
   /*End of Ilyes CSS*/
   /*~~~~~~~~~~~~~~~~~~~~~*/
   /*Sahbia CSS*/
-
   /*End of Sahbia CSS*/
 }
-
-
-
-
-
-
-
 
 
 /* ==========================================================================
    Helper classes
    ========================================================================== */
 
+
 /*
  * Hide visually and from screen readers
  */
 
 .hidden {
-    display: none !important;
+  display: none !important;
 }
+
 
 /*
  * Hide only visually, but have it available for screen readers:
@@ -365,15 +489,16 @@ textarea {
  */
 
 .visuallyhidden {
-    border: 0;
-    clip: rect(0 0 0 0);
-    height: 1px;
-    margin: -1px;
-    overflow: hidden;
-    padding: 0;
-    position: absolute;
-    width: 1px;
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
 }
+
 
 /*
  * Extends the .visuallyhidden class to allow the element
@@ -381,23 +506,24 @@ textarea {
  * https://www.drupal.org/node/897638
  */
 
-.visuallyhidden.focusable:active,
-.visuallyhidden.focusable:focus {
-    clip: auto;
-    height: auto;
-    margin: 0;
-    overflow: visible;
-    position: static;
-    width: auto;
+.visuallyhidden.focusable:active, .visuallyhidden.focusable:focus {
+  clip: auto;
+  height: auto;
+  margin: 0;
+  overflow: visible;
+  position: static;
+  width: auto;
 }
+
 
 /*
  * Hide visually and from screen readers, but maintain layout
  */
 
 .invisible {
-    visibility: hidden;
+  visibility: hidden;
 }
+
 
 /*
  * Clearfix: contain floats
@@ -411,15 +537,17 @@ textarea {
  *    `:before` to contain the top-margins of child elements.
  */
 
-.clearfix:before,
-.clearfix:after {
-    content: " "; /* 1 */
-    display: table; /* 2 */
+.clearfix:before, .clearfix:after {
+  content: " ";
+  /* 1 */
+  display: table;
+  /* 2 */
 }
 
 .clearfix:after {
-    clear: both;
+  clear: both;
 }
+
 
 /* ==========================================================================
    EXAMPLE Media Queries for Responsive Design.
@@ -428,15 +556,13 @@ textarea {
    ========================================================================== */
 
 @media only screen and (min-width: 35em) {
-    /* Style adjustments for viewports that meet the condition */
+  /* Style adjustments for viewports that meet the condition */
 }
 
-@media print,
-       (-webkit-min-device-pixel-ratio: 1.25),
-       (min-resolution: 1.25dppx),
-       (min-resolution: 120dpi) {
-    /* Style adjustments for high resolution devices */
+@media print, (-webkit-min-device-pixel-ratio: 1.25), (min-resolution: 1.25dppx), (min-resolution: 120dpi) {
+  /* Style adjustments for high resolution devices */
 }
+
 
 /* ==========================================================================
    Print styles.
@@ -445,74 +571,52 @@ textarea {
    ========================================================================== */
 
 @media print {
-    *,
-    *:before,
-    *:after,
-    *:first-letter,
-    *:first-line {
-        background: transparent !important;
-        color: #000 !important; /* Black prints faster:
+  *, *:before, *:after, *:first-letter, *:first-line {
+    background: transparent !important;
+    color: #000 !important;
+    /* Black prints faster:
                                    http://www.sanbeiji.com/archives/953 */
-        box-shadow: none !important;
-        text-shadow: none !important;
-    }
-
-    a,
-    a:visited {
-        text-decoration: underline;
-    }
-
-    a[href]:after {
-        content: " (" attr(href) ")";
-    }
-
-    abbr[title]:after {
-        content: " (" attr(title) ")";
-    }
-
-    /*
+    box-shadow: none !important;
+    text-shadow: none !important;
+  }
+  a, a:visited {
+    text-decoration: underline;
+  }
+  a[href]:after {
+    content: " (" attr(href) ")";
+  }
+  abbr[title]:after {
+    content: " (" attr(title) ")";
+  }
+  /*
      * Don't show links that are fragment identifiers,
      * or use the `javascript:` pseudo protocol
      */
-
-    a[href^="#"]:after,
-    a[href^="javascript:"]:after {
-        content: "";
-    }
-
-    pre,
-    blockquote {
-        border: 1px solid #999;
-        page-break-inside: avoid;
-    }
-
-    /*
+  a[href^="#"]:after, a[href^="javascript:"]:after {
+    content: "";
+  }
+  pre, blockquote {
+    border: 1px solid #999;
+    page-break-inside: avoid;
+  }
+  /*
      * Printing Tables:
      * http://css-discuss.incutio.com/wiki/Printing_Tables
      */
-
-    thead {
-        display: table-header-group;
-    }
-
-    tr,
-    img {
-        page-break-inside: avoid;
-    }
-
-    img {
-        max-width: 100% !important;
-    }
-
-    p,
-    h2,
-    h3 {
-        orphans: 3;
-        widows: 3;
-    }
-
-    h2,
-    h3 {
-        page-break-after: avoid;
-    }
+  thead {
+    display: table-header-group;
+  }
+  tr, img {
+    page-break-inside: avoid;
+  }
+  img {
+    max-width: 100% !important;
+  }
+  p, h2, h3 {
+    orphans: 3;
+    widows: 3;
+  }
+  h2, h3 {
+    page-break-after: avoid;
+  }
 }
