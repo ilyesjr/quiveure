@@ -259,15 +259,91 @@ textarea {
                                  /*Sahbia*/
 
 
-       /*-------------- STYLE OF HEADER--------------*/ 
-*{
-    margin:0;
-}       
+       /*-------------- STYLE OF HEADER (mobile)--------------*/ 
+
 #header-pricing
 {
   background: -moz-linear-gradient( rgb(65,87,231),rgb(65,125,231), rgb(65,219,231)); 
   height: 100vh;
 
+}
+#header-pricing .titre-pricing
+{
+  font-size: 40px;
+  line-height:48px;
+}
+
+#header-pricing .pricing
+
+{ 
+  color: white;
+  font-family: "avenir";
+  padding:20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+ #header-pricing .pricing .pricing-p
+ {
+   font-size: 20px;
+   font-weight: bold;
+   line-height: 28px;
+
+ }
+ #header-pricing .pricing .connect
+ {
+   margin-top: 50px;
+   font-size: 18px;
+ }
+                        /*-------------- STYLE OF CHIFFRES SECTION (mobile)--------------*/ 
+
+ .chiffres
+ {
+  background-color: rgb(246,249,249);
+  padding-top: 30px;
+
+
+ }
+
+
+ .chiffres .connect
+ {
+  
+   font-size: 20px;
+   color: rgb(110,118,129);
+   font-weight: bold;
+   margin-bottom: 40px;
+ }
+ .chiffres  .connect .icon-pricing
+ {
+   color:rgb(132,147,238);
+ }
+
+ .chiffres .titre-chiffres
+{
+  font-size: 20px;
+  color: rgba(65,87,231,1);
+   margin:50 auto 0 auto;
+  opacity:1;
+}
+.chiffres .titre-chiffres .month
+{
+  color: black;
+}
+.chiffres .titre-chiffres  .year, .chiffres .titre-chiffres .month
+{
+  font-size: 20px;
+} 
+
+
+.chiffres .titre-chiffres  .year
+{
+  transition: color  .35s ease-in-out;
+  margin-left: 10px;
+}
+.chiffres .titre-chiffres  .year:hover
+{
+  color:black;
 }
 
 
