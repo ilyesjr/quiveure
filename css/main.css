@@ -420,6 +420,7 @@ textarea {
 
 { 
   color: white;
+  margin-top: 50px;
   font-family: "avenir";
   padding:20px;
   display: flex;
@@ -490,12 +491,20 @@ textarea {
 }
            /*============STYLE PRICES ARTICLE==========*/
 
-.chiffres .row .price 
+.chiffres .prices
+{
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+.chiffres .prices .price 
 {
     border: 1px solid red;
     padding: 0px;
     background-color: rgb(218,225,235);
     margin-bottom: 20px;
+    border-radius: 8px;
+    width: 350px;
     
 } 
 
@@ -510,18 +519,276 @@ textarea {
  {
    padding-bottom: 20px;
    color: rgb(67,85,205);
-   font-size: 14px;
+   font-size: 18px;
+   font-weight: bold;
  }  
  .price .entete-price .price-chifre 
  {
    display: flex;
+   justify-content:center;
+   /*border:1px solid red;
+*/
+ } 
+ .price .entete-price .price-chifre .price-vlaue
+ {
+   /*border:1px solid green;*/
+   align-self: center;
+
 
  }
+.price .entete-price .price-chifre .first-value
+{
+  font-size: 8em;
+}
+.price .entete-price .price-chifre .scond-value
+
+{
+  font-size: 1.5em;
+}
+ .euro-dalars
+ {
+   /*border :1px solid orange;*/
+   font-size: 3em;
+ }
+
+
  .price .entete-price .price-chifre ul 
  {
     display :flex;
     flex-direction: column;
+    list-style-type: none;
+    justify-content: space-between;
   }
+  .price .entete-price .price-chifre .euro-dalars ul  li a 
+  {
+    text-decoration: none;
+    /*color: black;*/
+  }
+  .price .entete-price .price-chifre .euro-dalars  .dollars ul  a i 
+  {
+    
+    color:rgba(59,78,204,0.1);
+  }
+                /*===========color price article==============*/
+  #first-price, #eudo-first ul  li a 
+{
+  color:rgb(59,78,204);
+}
+#second-price
+{
+  background-color: rgb(109,152,230);
+}
+#second-price, #eudo-second ul  li a, #second-price .price-titre 
+{
+  color:white;
+}
+
+#third-price
+{
+ background-color:  rgb(59,78,204);
+}
+#third-price, #eudo-third ul  li a, #third-price .price-titre 
+{
+  color:white;
+}
+#four-price
+{
+  background-color: rgb(247,158,2);
+}
+#four-price, #eudo-four ul  li a, #four-price .price-titre 
+{
+    color:white;
+} 
+
+.price .boutton
+{
+  margin-top: 20px;
+  margin-bottom: 20px;
+   
+}
+.btn
+{
+  border-radius: 20px;
+  border:2px solid white;
+  height: 45px;
+  line-height: 36px;
+   padding: 5px 20px;
+  
+}
+#btn-first
+{
+  background-color: rgb(218,225,235);
+  border-color: rgb(59,78,204);
+  
+}
+#btn-first a
+{
+  color: rgb(59,78,204);
+}
+#btn-second
+{
+  background-color: rgb(109,152,230);
+  border-color: white;
+  
+}
+#btn-second a, #btn-third a
+{
+  color: white;
+}
+#btn-third
+{
+  background-color: rgb(59,78,204); 
+  border-color: white;
+  
+}
+
+#btn-second a, #btn-four a
+{
+  color: white;
+}
+#btn-four
+{
+  background-color: rgb(247,158,2);
+  border-color: white;
+}
+
+.price .boutton .btn a
+{
+  text-decoration: none;
+  color:white;
+}
+
+.text-four
+{
+  color: 7#c8a96;
+
+}
+.text-four p
+{
+  margin:30px;
+}
+.price .detail
+{
+   height: 50px;
+   background-color: rgb(200,205,214);
+
+}
+.price .detail p
+{
+    font-size: 20px;
+    padding-top: 8px;
+}
+   
+
+                   /*============STYLE Slider section==========*/ 
+
+ .slider-pricing
+ {
+  border:1px solid red;
+ }
+                   
+           
+
+ 
+                    /*===========MEDIA QUERY SAHBIA=============*/
+
+@media (min-width: 700px) 
+{
+ 
+ #header-pricing
+ {
+  /*position: relative;*/
+ }
+
+.prices
+{
+  position: relative;
+  top:-28em;
+  
+}
+
+.chiffres .container 
+{
+  width: 100%;
+
+  /*border:1px solid black;*/
+} 
+
+.chiffres .prices .price
+{
+   width: 300px;
+   margin-left: 20px;
+   margin-right: 20px;
+   height: auto;
+}
+#four-price .text-four
+{
+  margin-bottom: 60px;
+  margin-top: 60px;
+}
+
+/*.chiffres .prices .price
+    
+{
+  max-width: 330px;
+  margin:auto;
+ 
+}*/
+.chiffres .prices #first-price
+ {
+  /*margin-right:30px; */
+ }
+
+ .description-price 
+ {
+  background-color: white;
+  margin-bottom: 0px;
+  color: rgb(152,163,172);
+ }
+ #titre-second
+ {
+  color:rgb(109,152,230);
+ }
+ #titre-third
+ {
+  color:rgb(59,78,204);
+ }
+ #titre-four 
+ {
+  color: rgb(247,158,2);
+ }
+ #titre-second, #titre-third, #titre-four, #titre-first 
+ {
+   padding-top: 25px;
+ }
+ .slider-pricing
+ {
+  position: relative;
+  top:-28em;
+  background-color: rgb(246,249,249);
+ } 
+  
+ 
+
+
+} 
+@media (min-width: 900px) 
+{
+
+.chiffres .prices .price
+{
+   width: 340px;
+   margin-left: 20px;
+   margin-right: 20px;
+}
+
+
+}
+
+
+
+
+
 
 
 /*End of Sahbia CSS*/
