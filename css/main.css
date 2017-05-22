@@ -190,7 +190,7 @@ textarea {
 .navnormalMobile .navlogoMobile {
   width: 39px;
   height: 35px;
-  left: 42%;
+  left: 35%;
   z-index: 501;
   position: fixed;
 }
@@ -290,7 +290,7 @@ textarea {
 
 .mainContent h1 {
   font-family: "avenir";
-  font-size: 55px;
+  font-size: 34px;
   font-weight: bold;
   text-transform: uppercase;
   text-align: center;
@@ -301,7 +301,7 @@ textarea {
 
 .mainContent .subTitle {
   font-family: "avenir";
-  font-size: 35px;
+  font-size: 24px;
   font-weight: lighter;
   text-align: center;
   letter-spacing: -1px;
@@ -313,7 +313,7 @@ textarea {
   padding: 14px 30px 12px 30px;
   margin: 0 14px;
   font-family: "avenir";
-  font-size: 12px;
+  font-size: 10px;
   font-weight: bold;
   letter-spacing: 1px;
   text-transform: uppercase;
@@ -328,8 +328,8 @@ textarea {
 
 /*Formulaire*/
 
-.mainContent .signUpform {
-  margin: auto;
+.mainContent .signUpform .formSS{
+  margin-left: 13%;
 }
 
 .mainContent .signUpform p {
@@ -343,18 +343,20 @@ textarea {
 }
 
 .mainContent .signUpform #formSignUpp {
-  width: 20em;
+  width: 90%;
   height: 60px;
   font-family: "avenir";
   font-size: 18px;
   border: none;
   border-radius: 30px;
-  padding-left: 30px;
   color: #7c8a96;
+  text-align: center;
+  margin: auto;
 }
 
 .mainContent .signUpform .joinButton {
   height: 60px;
+  width: 90%;
   font-family: "avenir";
   font-size: 13px;
   font-weight: bold;
@@ -365,15 +367,20 @@ textarea {
   border: 2px solid #f79e02;
   border-radius: 30px 30px;
   text-transform: uppercase;
+  text-align: center;
+  margin: auto;
+  margin-top: 15px;
 }
 
 .mainContent .lastPara {
   font-family: "avenir";
-  font-size: 28px;
+  font-size: 24px;
   letter-spacing: -1px;
   color: #FFF;
   text-align: center;
+  margin: auto;
   margin-top: 1.5em;
+  width: 85%;
 }
 
 
@@ -386,29 +393,139 @@ textarea {
 /*<!-- ==================================== -->*/
 
 
-/*Mathieu CSS*/
+/*~~~~~~~~~~~~~~~~~~~~~~*/
 
 
-/*End of Mathieu CSS*/
+/*~~~~~~~~~~~~~~~~~~~~~~*/
 
 
-/*Ilyes CSS*/
+/*<!-- ============================= -->*/
 
 
-/*End of Ilyes CSS*/
+/*<!-- =============FOOTER============= -->*/
 
 
-/*Sahbia*/
+/*<!-- ============================= -->*/
+footer
+{
+  display: flex;
+  flex-direction: column;
+}
+footer .blockEmail
+{
+  background-color: #f6f9f9;
+  padding: 55px 20px;
+}
+
+footer .blockEmail p
+{
+  font-size: 18px;
+  font-family: "avenir";
+  color: #7c8a96;
+}
+
+footer .blockEmail form input
+{
+  border: none;
+  border-bottom: 2px solid #18e2bf;
+  background-color: transparent;
+  font-family: "avenir";
+  font-size: 30px;
+  font-weight: bold;
+  outline: none;
+  padding-top: 45px;
+}
+
+footer .blockEmail form input::-webkit-input-placeholder
+{
+  color: #18e2bf;
+}
+
+footer .blockAbout
+{
+  display: flex;
+  padding: 55px 10px 45px 20px;
+}
+
+footer .blockAbout ul
+{
+  list-style-type: none;
+  width: 50%;
+  padding: 0;
+  font-family: "avenir";
+}
+
+footer .blockAbout .listLeft
+{
+  font-size: 18px;
+  color: #242930;
+}
 
 
-/*End of Sahbia CSS*/
+footer .blockAbout .listLeft li
+{
+  padding-bottom: 20px;
+}
 
+footer .blockAbout .listRight
+{
+  font-size: 14px;
+  color: #7c8a96;
+}
+
+footer .blockAbout .listRight li
+{
+  padding-bottom: 10px;
+}
+
+footer .blockAbout .listRight li a
+{
+  color: #18e2bf;
+  text-decoration: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (min-width: 600px)
+{
+  /*Ilyes CSS*/
+  .mainContent h1 {
+    font-size: 55px;
+  }
+  .mainContent .subTitle {
+    font-size: 35px;
+    width: 100%;
+  }
+
+  .mainContent .signUpform #formSignUpp {
+    padding-left: 30px;
+    margin: 0;
+    width: 40%;
+  }
+
+  .mainContent .signUpform .joinButton {
+    margin: 0;
+    width: 40%;
+  }
+  /*End of Ilyes CSS*/
+}
 @media (min-width: 900px) {
   body {
     margin: 16px 16px 0px 16px;
   }
-  /*Mathieu CSS*/
-  /*End of Mathieu CSS*/
   /*~~~~~~~~~~~~~~~~~~~~~*/
   /*Ilyes CSS*/
   /*Navigation List*/
@@ -458,11 +575,35 @@ textarea {
   .navnormal .navlogo a svg {
     fill: #FFF;
   }
+
+  /*Footer*/
+  footer
+  {
+    flex-direction: row-reverse;
+  }
+
+  footer .blockEmail, footer .blockAbout
+  {
+    width: 50%;
+  }
+
+  footer .blockEmail p
+  {
+    font-size: 28px;
+  }
+
+  footer .blockAbout .listLeft
+  {
+    font-size: 20px;
+  }
+
+  footer .blockAbout .listRight
+  {
+    font-size: 17px;
+  }
   /*~~~~~~~~~~~~~~~~~~~~~~*/
   /*End of Ilyes CSS*/
   /*~~~~~~~~~~~~~~~~~~~~~*/
-  /*Sahbia CSS*/
-  /*End of Sahbia CSS*/
 }
 
 
