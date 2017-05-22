@@ -681,13 +681,67 @@ textarea {
    
 
                    /*============STYLE Slider section==========*/ 
-
- .slider-pricing
+.slider
+{
+  width: 600px;
+  height: 600px;
+  margin: auto;
+}
+ .slider .slides 
  {
-  border:1px solid red;
+  background-color: transparent;
  }
-                   
-           
+                  /*============STYLE CAESAR section==========*/ 
+ 
+ .caesar 
+ {
+  display: flex;
+  flex-direction: column;
+
+ } 
+.photocaesar
+{
+  background:url('../img/ceaser.jpg');
+  background-size: cover;
+  height: 500px;
+  padding-top: 0px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.photocaesar .casear-texte1
+{
+  margin: auto;
+  font-family: 'Keania One', cursive;
+  font-size: 50px;
+  
+}
+ .photocaesar .casear-texte blockquote
+{
+  font-size: 45px;
+  line-height: 50px;
+  margin: auto;
+}
+.photocaesar .casear-texte2
+{
+  text-transform: uppercase;
+  color: rgba(255,255,255,.2);
+  font-size: 14px;
+  margin-bottom: 40px;
+} 
+ .caesar .mostcompanie
+{
+  background-color: rgb(240,68,46);
+  font-size: 20px;
+  padding-top:0px;
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+
+
+}
+
 
  
                     /*===========MEDIA QUERY SAHBIA=============*/
@@ -703,8 +757,12 @@ textarea {
 .prices
 {
   position: relative;
-  top:-28em;
+  top:-8em;
   
+}
+.chiffres
+{
+  height: calc(attr(height)-8em);
 }
 
 .chiffres .container 
@@ -742,8 +800,16 @@ textarea {
  .description-price 
  {
   background-color: white;
-  margin-bottom: 0px;
+  padding-bottom: 0px;
+  height: 500px;
   color: rgb(152,163,172);
+   border: 1px solid green;
+   z-index: 100;
+ }
+ .description-price  ul
+ {
+  list-style-type: none;
+
  }
  #titre-second
  {
@@ -764,7 +830,7 @@ textarea {
  .slider-pricing
  {
   position: relative;
-  top:-28em;
+  top:-20em;
   background-color: rgb(246,249,249);
  } 
   

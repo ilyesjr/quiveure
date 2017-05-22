@@ -11,7 +11,10 @@
   <link rel="apple-touch-icon" href="apple-touch-icon.png">
   <!-- Place favicon.ico in the root directory -->
    <!-- Compiled and minified CSS -->
+   <link href="https://fonts.googleapis.com/css?family=Keania+One|Sonsie+One" rel="stylesheet"> 
+
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.2/css/materialize.min.css">
+
 
   <!-- Compiled and minified JavaScript -->
 
@@ -318,6 +321,7 @@
               <li>Offline File Access</li>
               <li>Basic Versioning</li>
               <li>Single Sign on</li>
+              <li>Single Sign on</li>
               <li>2-Factor Autentication</li>
             </ul>
       </div>
@@ -376,6 +380,7 @@
               <li>Offline File Access</li>
               <li>Basic Versioning</li>
               <li>Single Sign on</li>
+              <li>Single Sign on</li>
               <li>2-Factor Autentication</li>
             </ul>
       </div>
@@ -398,31 +403,38 @@
   <!-- ============= START SLIDER============= -->
   <!-- ============================= -->
 
- <section class="slider-pricing">
    
-   <div class="carousel carousel-slider center">
-    
-    <div class="carousel-item blue black-text" href="#one!">
+   <div class="slider">
+    <ul class="slides">
+      <li>
 
-        
-     <p> <blockquote class="black-text">
-
-         “LQuiver allows us also to audit the usage of corporate information and implement our security policies effectively. Quiver brought us a platform that ensures an entirely new vision of safe collaboration by protecting file sharing against information leakage.”
-      </blockquote></p>
+           <img src="img/car1.png"> <!-- random image -->
+        <!-- <div class="caption center-align">
+          <h3>This is our big Tagline!</h3>
+          <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
+        </div> -->
+      </li>
+      <li>
+        <img src="img/car2.png" class="responsive-img">
+          
+      </li>
+      <!-- <li>
+        <img src="http://lorempixel.com/580/250/nature/3"> <! random image -->
+        <!-- <div class="caption right-align">
+          <h3>Right Aligned Caption</h3>
+          <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
+        </div>
+      </li>
+      <li>
+        <img src="http://lorempixel.com/580/250/nature/4"> <! random image -->
+        <!-- <div class="caption center-align">
+          <h3>This is our big Tagline!</h3>
+          <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
+        </div>
+      </li> --> 
+    </ul>
     </div>
-    <div class="carousel-item amber black-text" href="#two!">
-      <p> <blockquote class="black-text">
-
-        “LQuiver allows us also to audit the usage of corporate information and implement our security policies effectively. Quiver brought us a platform that ensures an entirely new vision of safe collaboration by protecting file sharing against information leakage.”
-      </blockquote></p>
-    </div>
-  
-  </div>
-
-
-
-
- </section>
+      
   <!-- ==================================== -->
   <!-- =============END OF SLIDER=========== -->
   <!-- ==================================== -->
@@ -438,15 +450,22 @@
                <!-- PHOTOCAESAR ARTICLE -->
 
   <article class="photocaesar">
-    <div class="casear-texte">
-      <blockquote>Give back to Caesar what is Caesar's</blockquote>
+
+    <div class="casear-texte1  white-text flow-text">
+      <blockquote>
+        Give back to Caesar what is Caesar's
+       </blockquote>
+           
+    </div>
+    <div class="casear-texte2 center-align">
       <p>Not the caesar's salad</p>
     </div>
     </article>
 
         <!-- MOST-COMPANIE-ARTICLE -->
 
-     <article class="mostcompanie">
+     <article class="mostcompanie white-text">
+        <div class="container">
          <div class="most-text">
           <p class="most-text1">
             Most companies charge you whether you use their service or not.
@@ -473,6 +492,7 @@
              That’s only fair.
            </p>
          </div>
+      </div>   
      </article>   
  
 </section>
@@ -639,26 +659,14 @@
 
 <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.2/js/materialize.min.js"></script>
   <script>
-    window.jQuery || document.write('<script src="js/vendor/jquery-1.12.0.min.js"><\/script>')
-    $(document).ready(function(){
-      $('.carousel').carousel();
-    });
-     $('.carousel.carousel-slider').carousel({fullWidth: true});
+    window.jQuery || document.write('<script src="js/vendor/jquery-1.12.0.min.js"><\/script>'
+    
   </script>
   
-  <script src="js/plugins.js">
-    $('.carousel').carousel('next');
-   $('.carousel').carousel('next', 2); // Move next n times.
-// Previous slide
-$('.carousel').carousel('prev');
-$('.carousel').carousel('prev', 1); // Move prev n times.
-// Set to nth slide
-$('.carousel').carousel('set', 2);
-  </script>
-  <script src="js/main.js"></script>
-
+  <script src="js/plugins.js"></script>
+    
+  
   <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
   <script>
     (function(b, o, i, l, e, r) {
@@ -676,6 +684,16 @@ $('.carousel').carousel('set', 2);
     ga('create', 'UA-XXXXX-X', 'auto');
     ga('send', 'pageview');
   </script>
+  
+   <script src="js/main.js"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.2/js/materialize.min.js"></script>
+   <script  type="text/javascript" >
+     $(document).ready(function(){
+      $('.carousel').carousel();
+    });
+    
+   </script>
+  
 </body>
 
 </html>
