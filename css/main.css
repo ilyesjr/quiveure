@@ -496,12 +496,13 @@ textarea {
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
+  /*border: 2px solid green*/
 }
 .chiffres .prices .price 
 {
-    border: 1px solid red;
+    
     padding: 0px;
-    background-color: rgb(218,225,235);
+    /*background-color: rgb(218,225,235);*/
     margin-bottom: 20px;
     border-radius: 8px;
     width: 350px;
@@ -512,8 +513,8 @@ textarea {
  {
   
    border-radius: 5px;
-   border:3px solid transparent;
-   width: 100%;
+   border:3px solid red;
+   
  } 
  .price .entete-price .price-titre  
  {
@@ -574,7 +575,7 @@ textarea {
 {
   color:rgb(59,78,204);
 }
-#second-price
+#second-price .entete-price
 {
   background-color: rgb(109,152,230);
 }
@@ -583,7 +584,7 @@ textarea {
   color:white;
 }
 
-#third-price
+#third-price .entete-price
 {
  background-color:  rgb(59,78,204);
 }
@@ -591,7 +592,7 @@ textarea {
 {
   color:white;
 }
-#four-price
+#four-price .entete-price
 {
   background-color: rgb(247,158,2);
 }
@@ -714,6 +715,7 @@ textarea {
   margin: auto;
   font-family: 'Keania One', cursive;
   font-size: 50px;
+  max-width: 500px;
   
 }
  .photocaesar .casear-texte blockquote
@@ -721,6 +723,8 @@ textarea {
   font-size: 45px;
   line-height: 50px;
   margin: auto;
+  border: none;
+  quotes: "\201C""\201D""\2018""\2019"
 }
 .photocaesar .casear-texte2
 {
@@ -803,7 +807,7 @@ textarea {
   padding-bottom: 0px;
   height: 500px;
   color: rgb(152,163,172);
-   border: 1px solid green;
+  
    z-index: 100;
  }
  .description-price  ul
@@ -850,8 +854,77 @@ textarea {
 
 
 }
+@media (min-width: 1200px)
+{
+   
 
 
+  .price #boutton-first, .price #button-second, .price #boutton-third  
+  {
+     display: none;
+   }
+  .prices #first-price:hover
+  {
+     border: 2px solid rgb(218,225,235);
+
+  }
+  .prices #second-price:hover
+  {
+     border: 2px solid rgb(109,152,230);
+
+  }
+  .prices #third-price:hover
+  {
+     border: 2px solid rgb(59,78,204);
+
+  }
+  .prices #four-price:hover
+  {
+     border: 2px solid rgb(247,158,2); 
+  }
+  .prices #first-price:hover  #boutton-first 
+  {
+     display: block;
+
+  }
+  .prices #second-price:hover  #button-second
+
+  {
+    display: block;
+  }
+  .prices #third-price:hover  #boutton-third
+  {
+    display: block;
+  }
+  
+  .prices #second-price, .prices #first-price, .prices #third-price:
+  {
+    transition: height border  0.8s;
+  }
+
+  
+ 
+ .prices
+  {
+    position:static;
+    
+  }
+
+ .caesar
+ {
+   flex-direction: row;
+ }
+.photocaesar
+{
+  width: 50%;
+}
+.mostcompanie
+{
+  width: 50%;
+}
+
+
+}
 
 
 
