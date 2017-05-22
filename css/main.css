@@ -555,10 +555,48 @@ height: 200px;
   transition: 5s;
 }
 
+.imgdeco img{
+  width: 50%;
+  margin: auto;
+}
+
+.imgdeco, .imgdeco2 {
+  margin: auto;
+  text-align: center;
+}
+
+
+
+
+
+
+
 @media (max-width: 570px) {
   .row .col.s12 {
     width: inherit;
   }
+
+  .fmaincontainer img {
+
+    height: auto;
+    width: 100%;
+  }
+
+  .logotaille1 img{
+    width: 30px;
+    height: 30px;
+  }
+
+  .logotaille2 img {
+    width: 120px;
+    height: 120px;
+  }
+
+  .logof img{
+    height:50px;
+    width: 50px;
+  }
+
 
 }
 
@@ -591,6 +629,7 @@ height: 200px;
     padding-right: 70px;
   }
 
+
 /*images*/
 
   .features3 img{
@@ -614,8 +653,10 @@ height: 200px;
   }
 
   .regulation {
-      height: 86em;
+      height: 61em;
   }
+
+
 
   /*End of Mathieu CSS*/
   /*~~~~~~~~~~~~~~~~~~~~~*/
