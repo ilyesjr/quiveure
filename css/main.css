@@ -684,7 +684,7 @@ textarea {
                    /*============STYLE Slider section==========*/ 
 .slider
 {
-  width: 600px;
+  width: 90%;
   height: 600px;
   margin: auto;
 }
@@ -742,13 +742,69 @@ textarea {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
+}
 
+           /*============STYLE CAESAR section==========*/ 
 
+.causes
+{
+ 
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.titre-causes
+{
+  font-size: 25px;
+  text-align: center;
+}
+.causes .good
+{
+  width: 70%;
+  margin: auto;
+}
+.causes .good p
+{
+  color:#6a7681;
+  font-size: 19px;
+  line-height: 1.8em;
+  word-spacing: 5px;
+}
+
+.universite-nonprofit
+{
+  display: flex;
+  justify-content: space-between;
+
+}
+.causes-image 
+{
+  margin: auto;
 }
 
 
- 
+.causes-image .cause-image-ensemble
+{
+  width: 70%;
+  margin: auto;
+}
+
+.causes-image .cause-image-ensemble .img-body  svg
+{
+  width: 70%;
+  margin: auto;
+}
+ .cause-image-ensemble .img-head
+ {
+  position: relative;
+  top: 0px;
+ }
+                   
                     /*===========MEDIA QUERY SAHBIA=============*/
+
+
 
 @media (min-width: 700px) 
 {
@@ -857,7 +913,18 @@ textarea {
 @media (min-width: 1200px)
 {
    
-
+  .chiffres .prices
+ {
+   justify-content: center;
+   flex-wrap: nowrap;
+ }
+.chiffres .prices .price
+ {
+    width: 287px;
+   margin-left: 0px;
+   margin-right: 0px;
+}
+ 
 
   .price #boutton-first, .price #button-second, .price #boutton-third  
   {
@@ -897,7 +964,7 @@ textarea {
     display: block;
   }
   
-  .prices #second-price, .prices #first-price, .prices #third-price:
+  .prices #second-price, .prices #first-price, .prices #third-price, .prices #four-price:
   {
     transition: height border  0.8s;
   }
