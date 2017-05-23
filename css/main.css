@@ -753,7 +753,7 @@ textarea {
   justify-content: space-around;
 }
 
-           /*============STYLE CAESAR section==========*/ 
+           /*============STYLE CAUSES section==========*/ 
 
 .causes
 {
@@ -782,58 +782,28 @@ textarea {
   word-spacing: 5px;
 }
 
+
 .universite-nonprofit
 {
   display: flex;
   justify-content: space-between;
+  width: 500px;
 
+}
+.universite-nonprofit .nprofit
+{
+  margin-right: 20px;
 }
 .causes-image 
 {
   margin: auto;
 }
-
-
-.causes-image .cause-image-ensemble
+.universite-nonprofit .universite
 {
-  display: block;
-  width: 50%;
-  height: 400px;
-  min-width: 50%;
-  margin: 0 auto;
+  margin-left: 20px;
 }
 
-.causes-image .cause-image-ensemble .img-body  svg
-{
-  width: 70%;
-  margin: auto;
-}
- .cause-image-ensemble .img-left svg
- {
-   position: relative;
-   width: 30%;
-   top: -270px;
-   right: 25px;
 
-
- }
-.cause-image-ensemble .img-right svg
- {
-   position: relative;
-   width: 30%;
-   top: -270px;
-   left: 45px;
-
-
- }
-
- .cause-image-ensemble .img-head svg
- {
-    width: 30%;
-    position: relative;
-    top: -350px;
-    right:120px;
- }
                    
                     /*===========MEDIA QUERY SAHBIA=============*/
 
@@ -927,32 +897,7 @@ textarea {
   background-color: rgb(246,249,249);
  } 
   
- .cause-image-ensemble .img-left svg
- {
-   position: relative;
-   width: 40%;
-   top: -270px;
-   right: 25px;
-
-
- }
-.cause-image-ensemble .img-right svg
- {
-   position: relative;
-   width: 40%;
-   top: -300px;
-   left: 45px;
-
-
- }
-
- .cause-image-ensemble .img-head svg
- {
-    width: 40%;
-    position: relative;
-    top: 0px;
-    right:120px;
- }
+ 
 
 
 } 
@@ -984,16 +929,16 @@ textarea {
 }
  
 
-  .price #boutton-first, .price #button-second, .price #boutton-third  
-  {
+.price #boutton-first, .price #button-second, .price #boutton-third  
+{
      display: none;
-   }
-  .prices #first-price:hover
-  {
+}
+.prices #first-price:hover
+{
      border: 2px solid rgb(218,225,235);
 
-  }
-  .prices #second-price:hover
+}
+.prices #second-price:hover
   {
      border: 2px solid rgb(109,152,230);
 
@@ -1047,6 +992,35 @@ textarea {
 {
   width: 50%;
 }
+
+
+.causes
+{
+ 
+  height: 500px;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+.good
+{
+  /*width: 20%;*/
+}
+.good p
+{
+  width: 50%;
+  margin:auto;
+}
+
+.universite-nonprofit
+{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 30%;
+
+}
+
 
 
 }
