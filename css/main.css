@@ -540,11 +540,17 @@ margin-right: 30px;
 .features2 {
   position: relative;
   left: -15%;
+
+}
+
+.features1, .features2, .features3 {
+  -webkit-animation-delay:0.5s;
 }
 
 .features3 img{
 width: 200px;
 height: 200px;
+
 }
 
 .fmaincontainer a {
@@ -553,13 +559,11 @@ height: 200px;
   background-color: rgba(255,255,255,.3);
   border-radius: 30px 30px;
   font-size: normal 16px/16px "AvenirLTStd-Heavy",Helvetica,Arial,sans-serif;
-
 }
 
 .fmaincontainer a:hover i{
   position: relative;
   left: 5px;
-  transition: 5s;
 }
 
 .imgdeco img{
@@ -691,6 +695,12 @@ footer .blockAbout .listRight li a
     width: 50px;
   }
 
+  .imganimation {
+    overflow: hidden;
+  }
+
+
+
 
 }
 
@@ -718,6 +728,12 @@ footer .blockAbout .listRight li a
     width: 40%;
   }
   /*End of Ilyes CSS*/
+
+  /*Mathieu css */
+  .features1, .features2, .features3 {
+    display: none;
+  }
+  /*end of Mathieu css */
 }
 @media (min-width: 900px) {
   body {
@@ -736,6 +752,9 @@ footer .blockAbout .listRight li a
 
 
 /*images*/
+.features1, .features2, .features3 {
+  display: block;
+}
 
   .features3 img{
   width: 100%;
