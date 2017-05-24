@@ -496,13 +496,12 @@ textarea {
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
-  /*border: 2px solid green*/
+  
 }
 .chiffres .prices .price 
 {
     
     padding: 0px;
-    /*background-color: rgb(218,225,235);*/
     margin-bottom: 20px;
     border-radius: 8px;
     width: 350px;
@@ -513,7 +512,6 @@ textarea {
  {
   
    border-radius: 5px;
-   border:3px solid red;
    
  } 
  .price .entete-price .price-titre  
@@ -522,17 +520,17 @@ textarea {
    color: rgb(67,85,205);
    font-size: 18px;
    font-weight: bold;
+   padding-top: 40px;
  }  
  .price .entete-price .price-chifre 
  {
    display: flex;
    justify-content:center;
-   /*border:1px solid red;
-*/
+   
  } 
  .price .entete-price .price-chifre .price-vlaue
  {
-   /*border:1px solid green;*/
+   
    align-self: center;
 
 
@@ -563,7 +561,7 @@ textarea {
   .price .entete-price .price-chifre .euro-dalars ul  li a 
   {
     text-decoration: none;
-    /*color: black;*/
+    
   }
   .price .entete-price .price-chifre .euro-dalars  .dollars ul  a i 
   {
@@ -575,6 +573,10 @@ textarea {
 {
   color:rgb(59,78,204);
 }
+#first-price .entete-price
+{background-color:rgb(218,225,235) 
+}
+
 #second-price .entete-price
 {
   background-color: rgb(109,152,230);
@@ -786,25 +788,72 @@ textarea {
 .universite-nonprofit
 {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   width: 500px;
 
 }
-.universite-nonprofit .nprofit
-{
-  margin-right: 20px;
-}
+
 .causes-image 
 {
   margin: auto;
 }
-.universite-nonprofit .universite
+
+           /*============STYLE QUIVER section==========*/ 
+                 
+
+.quiver-pricing
 {
-  margin-left: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+
+}
+ .reponds
+ {
+   background-color: rgb(246,249,249);
+   color: black;
+   height: 500px;
+   text-align: center;
+
+ }                  
+.reponds .titre-quiver, .reponds .titre-quiver i
+{
+  color:rgb(24,226,191);
+  font-size: 45px;
+
+} 
+.reponds .menu-quiver
+{
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  
+}
+.reponds .menu-quiver li a
+{
+  color: rgb(111,100,100);
+  text-decoration: none;
+  padding: 0px
+}
+.reponds .menu-quiver li:hover 
+{
+  border: 2px solid rgb(24,226,191);
+  border-radius: 30%;
+  background-color: white;
+
+
+}
+.reponds .menu-quiver li:hover  a
+{
+  color: rgb(24,226,191);
+  background-color: white;
+  padding: 0px;
+
 }
 
 
-                   
                     /*===========MEDIA QUERY SAHBIA=============*/
 
 
@@ -927,7 +976,13 @@ textarea {
    margin-left: 0px;
    margin-right: 0px;
 }
- 
+ .prices #second-price, .prices #first-price, .prices #third-price, .prices #four-price
+  {
+    transition:  transform 3s border   3s;
+  }
+  
+
+
 
 .price #boutton-first, .price #button-second, .price #boutton-third  
 {
@@ -937,6 +992,10 @@ textarea {
 {
      border: 2px solid rgb(218,225,235);
 
+}
+.prices #first-price:hover  .prices #first-price .price-chifre
+{
+   transform: translate(0px,30px);
 }
 .prices #second-price:hover
   {
@@ -965,12 +1024,10 @@ textarea {
   .prices #third-price:hover  #boutton-third
   {
     display: block;
+
   }
   
-  .prices #second-price, .prices #first-price, .prices #third-price, .prices #four-price:
-  {
-    transition: height border  0.8s;
-  }
+  
 
   
  
