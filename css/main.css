@@ -713,7 +713,7 @@ footer .blockAbout .listRight li a
 
 #header-pricing
 {
-  background: -moz-linear-gradient( rgb(65,87,231),rgb(65,125,231), rgb(65,219,231)); 
+  background: -webkit-linear-gradient( rgb(65,87,231),rgb(65,125,231), rgb(65,219,231)); 
   height: 100vh;
 
 }
