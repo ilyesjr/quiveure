@@ -704,6 +704,722 @@ footer .blockAbout .listRight li a
 
 }
 
+/*===================================================================*/
+
+                                 /*Sahbia*/
+
+
+       /*-------------- STYLE OF HEADER (mobile)--------------*/ 
+
+#header-pricing
+{
+  background: -moz-linear-gradient( rgb(65,87,231),rgb(65,125,231), rgb(65,219,231)); 
+  height: 100vh;
+
+}
+#header-pricing .titre-pricing
+{
+  font-size: 40px;
+  line-height:48px;
+}
+
+#header-pricing .pricing
+
+{ 
+  color: white;
+  margin-top: 50px;
+  font-family: "avenir";
+  padding:20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+ #header-pricing .pricing .pricing-p
+ {
+   font-size: 20px;
+   font-weight: bold;
+   line-height: 28px;
+
+ }
+ #header-pricing .pricing .connect
+ {
+   margin-top: 50px;
+   font-size: 18px;
+ }
+                        /*-------------- STYLE OF CHIFFRES SECTION (mobile)--------------*/ 
+
+ .chiffres
+ {
+  background-color: rgb(246,249,249);
+  padding-top: 30px;
+  border: 1px solid black;
+
+ }
+
+
+ .chiffres .connect
+ {
+  
+   font-size: 20px;
+   color: rgb(110,118,129);
+   font-weight: bold;
+   margin-bottom: 40px;
+ }
+ .chiffres  .connect .icon-pricing
+ {
+   color:rgb(132,147,238);
+ }
+
+ .chiffres .titre-chiffres
+{
+  font-size: 20px;
+  color: rgba(65,87,231,1);
+   margin:50 auto 0 auto;
+  opacity:1;
+}
+.chiffres .titre-chiffres .month
+{
+  color: black;
+}
+.chiffres .titre-chiffres  .year, .chiffres .titre-chiffres .month
+{
+  font-size: 20px;
+} 
+
+
+.chiffres .titre-chiffres  .year
+{
+  transition: color  .35s ease-in-out;
+  margin-left: 10px;
+}
+.chiffres .titre-chiffres  .year:hover
+{
+  color:black;
+}
+           /*============STYLE PRICES ARTICLE==========*/
+
+.chiffres .prices
+{
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  
+}
+.chiffres .prices .price 
+{
+    
+    padding: 0px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    width: 350px;
+    
+} 
+
+ .price .entete-price 
+ {
+  
+   border-radius: 5px;
+   
+ } 
+ .price .entete-price .price-titre  
+ {
+   padding-bottom: 20px;
+   color: rgb(67,85,205);
+   font-size: 18px;
+   font-weight: bold;
+   padding-top: 40px;
+ }  
+ .price .entete-price .price-chifre 
+ {
+   display: flex;
+   justify-content:center;
+   
+ } 
+ .price .entete-price .price-chifre .price-vlaue
+ {
+   
+   align-self: center;
+
+
+ }
+.price .entete-price .price-chifre .first-value
+{
+  font-size: 8em;
+}
+.price .entete-price .price-chifre .scond-value
+
+{
+  font-size: 1.5em;
+}
+ .euro-dalars
+ {
+   /*border :1px solid orange;*/
+   font-size: 3em;
+ }
+
+
+ .price .entete-price .price-chifre ul 
+ {
+    display :flex;
+    flex-direction: column;
+    list-style-type: none;
+    justify-content: space-between;
+  }
+  .price .entete-price .price-chifre .euro-dalars ul  li a 
+  {
+    text-decoration: none;
+    
+  }
+  .price .entete-price .price-chifre .euro-dalars  .dollars ul  a i 
+  {
+    
+    color:rgba(59,78,204,0.1);
+  }
+                /*===========color price article==============*/
+  #first-price, #eudo-first ul  li a 
+{
+  color:rgb(59,78,204);
+}
+#first-price .entete-price
+{background-color:rgb(218,225,235) 
+}
+
+#second-price .entete-price
+{
+  background-color: rgb(109,152,230);
+}
+#second-price, #eudo-second ul  li a, #second-price .price-titre 
+{
+  color:white;
+}
+
+#third-price .entete-price
+{
+ background-color:  rgb(59,78,204);
+}
+#third-price, #eudo-third ul  li a, #third-price .price-titre 
+{
+  color:white;
+}
+#four-price .entete-price
+{
+  background-color: rgb(247,158,2);
+}
+#four-price, #eudo-four ul  li a, #four-price .price-titre 
+{
+    color:white;
+} 
+
+.price .boutton
+{
+  margin-top: 20px;
+  margin-bottom: 20px;
+   
+}
+.btn
+{
+  border-radius: 20px;
+  border:2px solid white;
+  height: 45px;
+  line-height: 36px;
+   padding: 5px 20px;
+  
+}
+#btn-first
+{
+  background-color: rgb(218,225,235);
+  border-color: rgb(59,78,204);
+  
+}
+#btn-first a
+{
+  color: rgb(59,78,204);
+}
+#btn-second
+{
+  background-color: rgb(109,152,230);
+  border-color: white;
+  
+}
+#btn-second a, #btn-third a
+{
+  color: white;
+}
+#btn-third
+{
+  background-color: rgb(59,78,204); 
+  border-color: white;
+  
+}
+
+#btn-second a, #btn-four a
+{
+  color: white;
+}
+#btn-four
+{
+  background-color: rgb(247,158,2);
+  border-color: white;
+}
+
+.price .boutton .btn a
+{
+  text-decoration: none;
+  color:white;
+}
+
+.text-four
+{
+  color: 7#c8a96;
+
+}
+.text-four p
+{
+  margin:30px;
+}
+.price .detail
+{
+   height: 50px;
+   background-color: rgb(200,205,214);
+
+}
+#description1
+{
+  display: none;
+}
+.price .detail p
+{
+    font-size: 20px;
+    padding-top: 8px;
+    color: white;
+}
+.price .detail:hover #description1
+{
+   display: block;
+}
+
+
+                   /*============STYLE Slider section==========*/ 
+.slider
+{
+  width: 90%;
+  height: 600px;
+  margin: auto;
+}
+ .slider .slides 
+ {
+  background-color: transparent;
+ }
+                  /*============STYLE CAESAR section==========*/ 
+ 
+ .caesar 
+ {
+  display: flex;
+  flex-direction: column;
+
+ } 
+.photocaesar
+{
+  background:url('../img/ceaser.jpg');
+  background-size: cover;
+  height: 500px;
+  padding-top: 0px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.photocaesar .casear-texte1
+{
+  margin: auto;
+  font-family: 'Keania One', cursive;
+  font-size: 50px;
+  max-width: 500px;
+  
+}
+ .photocaesar .casear-texte blockquote
+{
+  font-size: 45px;
+  line-height: 50px;
+  margin: auto;
+  border: none;
+  quotes: "\201C""\201D""\2018""\2019"
+}
+.photocaesar .casear-texte2
+{
+  text-transform: uppercase;
+  color: rgba(255,255,255,.2);
+  font-size: 14px;
+  margin-bottom: 40px;
+} 
+ .caesar .mostcompanie
+{
+  background-color: rgb(240,68,46);
+  font-size: 20px;
+  padding-top:0px;
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+           /*============STYLE CAUSES section==========*/ 
+
+.causes
+{
+ 
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.titre-causes
+{
+  font-size: 25px;
+  text-align: center;
+}
+.causes .good
+{
+  width: 70%;
+  margin: auto;
+}
+.causes .good p
+{
+  color:#6a7681;
+  font-size: 19px;
+  line-height: 1.8em;
+  word-spacing: 5px;
+}
+
+
+.universite-nonprofit
+{
+  display: flex;
+  justify-content: space-around;
+  width: 500px;
+
+}
+
+.causes-image 
+{
+  margin: auto;
+}
+
+           /*============STYLE QUIVER section==========*/ 
+                 
+
+.quiver-pricing
+{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+   padding-bottom: 20px;
+
+
+}
+ .reponds
+ {
+   background-color: rgb(246,249,249);
+   color: black;
+   height: 600px;
+   text-align: center;
+   padding-bottom: 20px;
+  } 
+
+.quiver-pricing .titre-quiver, .quiver-pricing .titre-quiver i
+{
+  color:rgb(24,226,191);
+  font-size: 45px;
+
+} 
+.reponds .menu-quiver
+{
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  height: 700px;
+  
+}
+.reponds .menu-quiver li a
+{
+  color: rgb(111,100,100);
+  text-decoration: none;
+  padding: 0 8px;
+  background: none;
+  border: none;
+  box-shadow: none;
+
+}
+
+.reponds .menu-quiver li:hover  a
+{
+  color: rgb(24,226,191);
+  background-color: white;
+  
+  border: 2px solid rgb(24,226,191);
+
+}
+.accor
+{
+  background-color: rgb(246,249,249);
+  color: rgb(111,110,110);
+  width: 100%;
+  padding-left: 20px;
+
+}
+.accor .accord1 .collapsible li h4
+{
+  background-color: rgb(246,249,249);
+  font-size: 19px;
+  transition: color 2s;
+
+}
+.accor .accord1 .collapsible li h4:hover
+{
+  color: rgb(24,226,191);;
+}
+.collapsible
+{
+  box-shadow: none;
+}
+
+
+                    /*===========MEDIA QUERY SAHBIA=============*/
+
+
+
+@media (min-width: 700px) 
+{
+ 
+ #header-pricing
+ {
+  /*position: relative;*/
+ }
+
+.prices
+{
+  position: relative;
+  top:-8em;
+  
+}
+.chiffres
+{
+  height: calc(attr(height)-8em);
+}
+
+.chiffres .container 
+{
+  width: 100%;
+
+  /*border:1px solid black;*/
+} 
+
+.chiffres .prices .price
+{
+   width: 300px;
+   margin-left: 20px;
+   margin-right: 20px;
+   height: auto;
+}
+#four-price .text-four
+{
+  margin-bottom: 60px;
+  margin-top: 60px;
+}
+
+.chiffres .prices #first-price
+ {
+  
+ }
+
+ .description-price 
+ {
+  background-color: white;
+  padding-bottom: 0px;
+  height: 500px;
+  color: rgb(152,163,172);
+  
+   z-index: 100;
+ }
+ .description-price  ul
+ {
+  list-style-type: none;
+
+ }
+ #titre-second
+ {
+  color:rgb(109,152,230);
+ }
+ #titre-third
+ {
+  color:rgb(59,78,204);
+ }
+ #titre-four 
+ {
+  color: rgb(247,158,2);
+ }
+ #titre-second, #titre-third, #titre-four, #titre-first 
+ {
+   padding-top: 25px;
+ }
+ .slider-pricing
+ {
+  position: relative;
+  top:-20em;
+  background-color: rgb(246,249,249);
+ } 
+  
+ 
+
+
+} 
+@media (min-width: 900px) 
+{
+
+.chiffres .prices .price
+{
+   width: 340px;
+   margin-left: 20px;
+   margin-right: 20px;
+}
+
+
+}
+@media (min-width: 1200px)
+{
+   
+  .chiffres .prices
+ {
+   justify-content: center;
+   flex-wrap: nowrap;
+ }
+.chiffres .prices .price
+ {
+    width: 287px;
+   margin-left: 0px;
+   margin-right: 0px;
+}
+ .prices #second-price, .prices #first-price, .prices #third-price, .prices #four-price
+  {
+    transition:  transform 3s border   3s;
+  }
+  
+
+
+
+.price #boutton-first, .price #button-second, .price #boutton-third  
+{
+     display: none;
+}
+.prices #first-price:hover
+{
+     border: 2px solid rgb(218,225,235);
+
+}
+
+.prices #second-price:hover
+  {
+     border: 2px solid rgb(109,152,230);
+
+  }
+  .prices #third-price:hover
+  {
+     border: 2px solid rgb(59,78,204);
+
+  }
+  .prices #four-price:hover
+  {
+     border: 2px solid rgb(247,158,2); 
+  }
+  .prices #first-price:hover  #boutton-first 
+  {
+     display: block;
+
+  }
+  .prices #second-price:hover  #button-second
+
+  {
+    display: block;
+  }
+  .prices #third-price:hover  #boutton-third
+  {
+    display: block;
+
+  }
+  
+ .prices
+  {
+    position:static;
+    
+  }
+
+ .caesar
+ {
+   flex-direction: row;
+ }
+.photocaesar
+{
+  width: 50%;
+}
+.mostcompanie
+{
+  width: 50%;
+}
+
+
+.causes
+{
+ 
+  height: 500px;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.good p
+{
+  width: 50%;
+  margin:auto;
+}
+
+.universite-nonprofit
+{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 30%;
+
+}
+
+.quiver-pricing
+{
+  
+  flex-direction: row;
+  justify-content: flex-start;
+   padding-bottom: 20px;
+
+ }
+.reponds
+ {
+   
+   height:900px;
+   width: 50%;
+  } 
+.accor
+{
+  height:900px;
+  width: 50%;
+   
+}
+
+
+
+
+}
+
+
 
 
 @media (min-width: 600px)
