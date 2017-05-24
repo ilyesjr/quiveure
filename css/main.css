@@ -190,7 +190,7 @@ textarea {
 .navnormalMobile .navlogoMobile {
   width: 39px;
   height: 35px;
-  left: 35%;
+  left: 42%;
   z-index: 501;
   position: fixed;
 }
@@ -271,9 +271,6 @@ textarea {
 /*~~~~~~~~~~~~~~~~~~~~~~*/
 
 
-
-
-
 /*<!-- ============================= -->*/
 
 
@@ -281,7 +278,6 @@ textarea {
 
 
 /*<!-- ============================= -->*/
-
 
 
 /*Title, Subtitle and Text*/
@@ -294,7 +290,7 @@ textarea {
 
 .mainContent h1 {
   font-family: "avenir";
-  font-size: 34px;
+  font-size: 55px;
   font-weight: bold;
   text-transform: uppercase;
   text-align: center;
@@ -305,7 +301,7 @@ textarea {
 
 .mainContent .subTitle {
   font-family: "avenir";
-  font-size: 24px;
+  font-size: 35px;
   font-weight: lighter;
   text-align: center;
   letter-spacing: -1px;
@@ -317,7 +313,7 @@ textarea {
   padding: 14px 30px 12px 30px;
   margin: 0 14px;
   font-family: "avenir";
-  font-size: 10px;
+  font-size: 12px;
   font-weight: bold;
   letter-spacing: 1px;
   text-transform: uppercase;
@@ -332,8 +328,8 @@ textarea {
 
 /*Formulaire*/
 
-.mainContent .signUpform .formSS{
-  margin-left: 13%;
+.mainContent .signUpform {
+  margin: auto;
 }
 
 .mainContent .signUpform p {
@@ -347,20 +343,18 @@ textarea {
 }
 
 .mainContent .signUpform #formSignUpp {
-  width: 90%;
+  width: 20em;
   height: 60px;
   font-family: "avenir";
   font-size: 18px;
   border: none;
   border-radius: 30px;
+  padding-left: 30px;
   color: #7c8a96;
-  text-align: center;
-  margin: auto;
 }
 
 .mainContent .signUpform .joinButton {
   height: 60px;
-  width: 90%;
   font-family: "avenir";
   font-size: 13px;
   font-weight: bold;
@@ -371,20 +365,15 @@ textarea {
   border: 2px solid #f79e02;
   border-radius: 30px 30px;
   text-transform: uppercase;
-  text-align: center;
-  margin: auto;
-  margin-top: 15px;
 }
 
 .mainContent .lastPara {
   font-family: "avenir";
-  font-size: 24px;
+  font-size: 28px;
   letter-spacing: -1px;
   color: #FFF;
   text-align: center;
-  margin: auto;
   margin-top: 1.5em;
-  width: 85%;
 }
 
 
@@ -398,311 +387,15 @@ textarea {
 
 
 /*Mathieu CSS*/
-body {
-  color: #7C8A96;
-}
 
-h3 {
-  color: #36454E;
-}
-/*header*/
 
-header .titrefeatures, header .pfeature{
-  text-align: center;
-}
+/*End of Mathieu CSS*/
 
-header .titrefeatures {
-  margin-top: 100px;
-}
 
-header .pfeature{
-  margin-bottom: 100px;
-}
+/*Ilyes CSS*/
 
 
-.imganimation {
-  display: flex;
-}
-
-.imganimation li {
-  margin-left: 60px;
-}
-
-
-
-
-
-
-/*maincontainer*/
-
-.fmaincontainer h3 {
-  font-size: 30px;
-  margin-top: 50px;
-  margin-bottom: 50px;
-}
-
-.fmaincontainer h2 {
-  margin: 0;
-}
-
-
-.col.s12 {
-  padding-top: 20px;
-  padding-bottom: 30px;
-  padding-left: 30px;
-  padding-right: 30px;
-}
-
-
-.fmaincontainer section ul li {
-  display: block;
-  width: 100%;
-  margin: auto;
-}
-
-.col.l6.bgrouge, .col.l6.bggris  {
-  padding-bottom: 0;
-}
-
-section ul li {
-  font-size: 18px;
-  line-height: 24px;
-  padding-bottom: 20px;
-}
-
-.fmaincontainer img {
-  height: auto;
-  width: 500px;
-}
-
-.logof img{
-  height:50px;
-  width: 50px;
-}
-
-.bgnoir {
-  background-color: #282B33;
-  color: #FFFFFF;
-}
-
-.bgrouge {
-  background-image:linear-gradient(#FA3267, #F33F3E);
-  color: #FFFFFF;
-  padding-bottom: 0;
-}
-
-.bggris {
-  background-color: #F6F9F9;
-}
-
-.titreblanc {
-  color: #FFFFFF;
-}
-
-.fullogo {
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
-}
-
-.fullogo li{
-margin-right: 30px;
-}
-
-.logotaille1 img{
-  width: 30px;
-  height: 30px;
-}
-
-.logotaille2 img {
-  width: 120px;
-  height: 120px;
-}
-
-.tailletitref {
-  font-size: 50px;
-  text-align: center;
-}
-
-.signup {
-  margin-top: 50px;
-  margin-bottom: 50px;
-  text-align: center;
-}
-
-.features2 img, .features1 img{
-
-  height: 200px;
-  width: 100px;
-
-}
-
-.features2 {
-  position: relative;
-  left: -15%;
-
-}
-
-.features1, .features2, .features3 {
-  -webkit-animation-delay:0.5s;
-}
-
-.features3 img{
-width: 200px;
-height: 200px;
-
-}
-
-.fmaincontainer a {
-  color: white;
-  padding: 11px 60px 10px 25px;
-  background-color: rgba(255,255,255,.3);
-  border-radius: 30px 30px;
-  font-size: normal 16px/16px "AvenirLTStd-Heavy",Helvetica,Arial,sans-serif;
-}
-
-.fmaincontainer a:hover i{
-  position: relative;
-  left: 5px;
-}
-
-.imgdeco img{
-  width: 50%;
-  margin: auto;
-}
-
-.imgdeco, .imgdeco2 {
-  margin: auto;
-  text-align: center;
-}
-/*~~~~~~~~~~~~~~~~~~~~~~*/
-
-
-/*~~~~~~~~~~~~~~~~~~~~~~*/
-
-
-/*<!-- ============================= -->*/
-
-
-/*<!-- =============FOOTER============= -->*/
-
-
-/*<!-- ============================= -->*/
-
-footer
-{
-  display: flex;
-  flex-direction: column;
-}
-
-footer .blockEmail
-{
-  background-color: #f6f9f9;
-  padding: 55px 20px;
-}
-
-footer .blockEmail p
-{
-  font-size: 18px;
-  font-family: "avenir";
-  color: #7c8a96;
-}
-
-footer .blockEmail form input
-{
-  border: none;
-  border-bottom: 2px solid #18e2bf;
-  background-color: transparent;
-  font-family: "avenir";
-  font-size: 30px;
-  font-weight: bold;
-  outline: none;
-  padding-top: 45px;
-}
-
-footer .blockEmail form input::-webkit-input-placeholder
-{
-  color: #18e2bf;
-}
-
-footer .blockAbout
-{
-  display: flex;
-  padding: 55px 10px 45px 20px;
-}
-
-footer .blockAbout ul
-{
-  list-style-type: none;
-  width: 50%;
-  padding: 0;
-  font-family: "avenir";
-}
-
-footer .blockAbout .listLeft
-{
-  font-size: 18px;
-  color: #242930;
-}
-
-
-footer .blockAbout .listLeft li
-{
-  padding-bottom: 20px;
-}
-
-footer .blockAbout .listRight
-{
-  font-size: 14px;
-  color: #7c8a96;
-}
-
-footer .blockAbout .listRight li
-{
-  padding-bottom: 10px;
-}
-
-footer .blockAbout .listRight li a
-{
-  color: #18e2bf;
-  text-decoration: none;
-}
-
-
-@media (max-width: 570px) {
-  .row .col.s12 {
-    width: inherit;
-  }
-
-  .fmaincontainer img {
-
-    height: auto;
-    width: 100%;
-  }
-
-  .logotaille1 img{
-    width: 30px;
-    height: 30px;
-  }
-
-  .logotaille2 img {
-    width: 120px;
-    height: 120px;
-  }
-
-  .logof img{
-    height:50px;
-    width: 50px;
-  }
-
-  .imganimation {
-    overflow: hidden;
-  }
-
-
-
-
-}
+/*End of Ilyes CSS*/
 
 /*===================================================================*/
 
@@ -752,7 +445,7 @@ footer .blockAbout .listRight li a
  {
   background-color: rgb(246,249,249);
   padding-top: 30px;
-  border: 1px solid black;
+  
 
  }
 
@@ -853,7 +546,7 @@ footer .blockAbout .listRight li a
 }
  .euro-dalars
  {
-   /*border :1px solid orange;*/
+  
    font-size: 3em;
  }
 
@@ -1422,84 +1115,15 @@ footer .blockAbout .listRight li a
 
 
 
-@media (min-width: 600px)
-{
-  /*Ilyes CSS*/
-  .mainContent h1 {
-    font-size: 55px;
-  }
-  .mainContent .subTitle {
-    font-size: 35px;
-    width: 100%;
-  }
 
-  .mainContent .signUpform #formSignUpp {
-    padding-left: 30px;
-    margin: 0;
-    width: 40%;
-  }
+/*End of Sahbia CSS*/
 
-  .mainContent .signUpform .joinButton {
-    margin: 0;
-    width: 40%;
-  }
-  /*End of Ilyes CSS*/
-
-  /*Mathieu css */
-  .features1, .features2, .features3 {
-    display: none;
-  }
-  /*end of Mathieu css */
-}
 @media (min-width: 900px) {
   body {
     margin: 16px 16px 0px 16px;
   }
-
-
   /*Mathieu CSS*/
-
-  .fmaincontainer .col.l6 {
-    padding-top:160px;
-    padding-bottom: 160px;
-    padding-left: 70px;
-    padding-right: 70px;
-  }
-
-
-/*images*/
-.features1, .features2, .features3 {
-  display: block;
-}
-
-  .features3 img{
-  width: 100%;
-  height: auto;
-  }
-
-  .features2 img, .features1 img {
-
-    height: 500px;
-    width: auto;
-  }
-
-  .features1, .features2, .features3 {
-    margin-bottom: 50px;
-  }
-
-  .features2 {
-    position: relative;
-    left: 0%;
-  }
-
-  .regulation {
-      height: 61em;
-  }
-
-
-
   /*End of Mathieu CSS*/
-
   /*~~~~~~~~~~~~~~~~~~~~~*/
   /*Ilyes CSS*/
   /*Navigation List*/
@@ -1549,35 +1173,11 @@ footer .blockAbout .listRight li a
   .navnormal .navlogo a svg {
     fill: #FFF;
   }
-
-  /*Footer*/
-  footer
-  {
-    flex-direction: row-reverse;
-  }
-
-  footer .blockEmail, footer .blockAbout
-  {
-    width: 50%;
-  }
-
-  footer .blockEmail p
-  {
-    font-size: 28px;
-  }
-
-  footer .blockAbout .listLeft
-  {
-    font-size: 20px;
-  }
-
-  footer .blockAbout .listRight
-  {
-    font-size: 17px;
-  }
   /*~~~~~~~~~~~~~~~~~~~~~~*/
   /*End of Ilyes CSS*/
   /*~~~~~~~~~~~~~~~~~~~~~*/
+  /*Sahbia CSS*/
+  /*End of Sahbia CSS*/
 }
 
 
